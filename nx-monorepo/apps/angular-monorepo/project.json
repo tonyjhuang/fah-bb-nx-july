@@ -1,27 +1,27 @@
 {
-  "name": "nx-monorepo",
+  "name": "angular-monorepo",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/nx-monorepo/src",
+  "sourceRoot": "apps/angular-monorepo/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/nx-monorepo",
-        "index": "apps/nx-monorepo/src/index.html",
-        "browser": "apps/nx-monorepo/src/main.ts",
+        "outputPath": "dist/apps/angular-monorepo",
+        "index": "apps/angular-monorepo/src/index.html",
+        "browser": "apps/angular-monorepo/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/nx-monorepo/tsconfig.app.json",
+        "tsConfig": "apps/angular-monorepo/tsconfig.app.json",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/nx-monorepo/public"
+            "input": "apps/angular-monorepo/public"
           }
         ],
-        "styles": ["apps/nx-monorepo/src/styles.css"],
+        "styles": ["apps/angular-monorepo/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -52,10 +52,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "nx-monorepo:build:production"
+          "buildTarget": "angular-monorepo:build:production"
         },
         "development": {
-          "buildTarget": "nx-monorepo:build:development"
+          "buildTarget": "angular-monorepo:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -63,7 +63,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "nx-monorepo:build"
+        "buildTarget": "angular-monorepo:build"
       }
     },
     "lint": {
@@ -73,7 +73,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/nx-monorepo/jest.config.ts"
+        "jestConfig": "apps/angular-monorepo/jest.config.ts"
       }
     }
   }

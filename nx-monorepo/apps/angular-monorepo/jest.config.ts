@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'nx-monorepo',
+  displayName: 'angular-monorepo',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/nx-monorepo',
+  coverageDirectory: '../../coverage/apps/angular-monorepo',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

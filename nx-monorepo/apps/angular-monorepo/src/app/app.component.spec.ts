@@ -15,13 +15,13 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome nx-monorepo'
+      'Welcome angular-monorepo'
     );
   });
 
-  it(`should have as title 'nx-monorepo'`, () => {
+  it(`should have as title 'angular-monorepo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('nx-monorepo');
+    expect(app.title).toEqual('angular-monorepo');
   });
 });

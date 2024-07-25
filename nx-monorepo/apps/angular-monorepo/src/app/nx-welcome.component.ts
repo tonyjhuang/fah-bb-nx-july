@@ -432,7 +432,7 @@ import { CommonModule } from '@angular/common';
         <div id="welcome">
           <h1>
             <span> Hello there, </span>
-            Welcome nx-monorepo 👋
+            Welcome angular-monorepo 👋
           </h1>
         </div>
         <!--  HERO  -->
@@ -836,7 +836,7 @@ nx g &#64;nx/angular:component ui/src/lib/button</pre>
               </svg>
               View project details
             </summary>
-            <pre>nx show project nx-monorepo --web</pre>
+            <pre>nx show project angular-monorepo --web</pre>
           </details>
           <details>
             <summary>
